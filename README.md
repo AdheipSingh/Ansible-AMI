@@ -15,6 +15,11 @@ $ aws configure
 
 - In the Ansible.cfg
 - Change the private_key_file parameter according to usage
+- Make sure the private_key_files has correct permissions.
+
+```
+$ chmod 0400 baston-hashmi.pem
+```
 ```
 [defaults]
 host_key_checking = False
